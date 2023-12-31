@@ -1,0 +1,42 @@
+{
+  "format": "pop",
+  "apiVersion": "2020-05-18",
+  "checksumFormat": "md5",
+  "endpointPrefix": "dataworks-public",
+  "serviceAbbreviation": "dataworks",
+  "serviceFullName": "Aliyun DataWorks",
+  "signatureVersion": "pop",
+  "timestampFormat": "top",
+  "xmlnamespace": "",
+  "operations": {
+    "searchMetaTables": {
+      "name": "SearchMetaTables",
+      "http": {
+        "method": "POST",
+        "uri": "/"
+      },
+      "input": {
+        "type": "structure",
+        "members": {
+          "Action": {
+            "required": true,
+            "default": "SearchMetaTables",
+            "type": "string"
+          },
+          "AppGuid": {
+            "required": true,
+            "type": "string"
+          },
+          "Keyword": {
+            "required": true,
+            "type": "string"
+          },
+          "DataSourceType": {
+            "required": true,
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
