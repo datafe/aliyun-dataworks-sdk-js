@@ -1,0 +1,33 @@
+{
+  "name": "aliyun-dataworks-sdk-js",
+  "main": "dist/aliyun-dataworks-sdk.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/datafe/aliyun-dataworks-sdk-js",
+  "author": "Samuel Hsin <caramels@gmail.com> (https://github.com/datafe)",
+  "license": "Apache-2.0",
+  "description": "Aliyun DataWorks SDK for JavaScript",
+  "scripts": {
+    "build": "browserify -r dataworks-2020-05-18.json browser.js > dist/aliyun-dataworks-sdk.js"
+  },
+  "ignore": [
+    "apis",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "samples",
+    "test*",
+    "tools",
+    "browser.js",
+    "index.js"
+  ],
+  "devDependencies": {
+    "spark-md5": "~1.0.0",
+    "jsSHA": "~2.0.1"
+  },
+  "moduleType": [
+    "globals"
+  ],
+  "engines": {
+    "node": ">=14.17.4"
+  }
+}
