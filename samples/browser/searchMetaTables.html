@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="../../dist/aliyun-dataworks-sdk.js"></script>
+</head>
+
+<body>
+  <script>
+    let ALY = window.ALY;
+
+    let dataworks = new ALY.DATAWORKS({
+      // see https://ram.console.aliyun.com/manage/ak
+      accessKeyId: "Your Access Key",
+      secretAccessKey: "Your Access Secret",
+      endpoint: 'http://dataworks.cn-shanghai.aliyuncs.com', // see https://api.aliyun.com/product/dataworks-public
+      apiVersion: '2020-05-18'
+    });
+
+    // example https://next.api.aliyun.com/api/dataworks-public/2020-05-18/SearchMetaTables
+    dataworks?.searchMetaTables?.({
+      AppGuid: 'odps.YOUR_MC_PROJECT',
+      Keyword: 'test',
+      DataSourceType: 'ODPS', // support ODPS, emr
+    }, (err, res) => {
+      console?.log?.(err, res);
+    });
+
+  </script>
+</body>
+
+</html>

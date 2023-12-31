@@ -1,0 +1,54 @@
+{
+  "name": "aliyun-dataworks-sdk-js",
+  "description": "Aliyun DataWorks SDK for JavaScript (No Need Backend to Run SDK)",
+  "version": "1.0.0",
+  "author": "Samuel Hsin <caramels@gmail.com> (https://github.com/datafe)",
+  "homepage": "https://github.com/datafe/aliyun-dataworks-sdk-js.git",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "browser": {
+    "./lib/util.js": "./lib/util-browser.js",
+    "dataworks-2020-05-18.json": "./apis/dataworks-2020-05-18.json"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "browserify -r dataworks-2020-05-18.json browser.js > dist/aliyun-dataworks-sdk.js"
+  },
+  "keywords": [
+    "Aliyun",
+    "SDK",
+    "DataWorks",
+    "JavaScript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:datafe/aliyun-dataworks-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datafe/aliyun-dataworks-sdk-js/issues",
+    "mail": ""
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.3",
+    "coffeeify": "",
+    "cucumber": "^5.1.0",
+    "jasmine-node": "^3.0.0",
+    "jshint": "^2.10.2",
+    "mocha": "^6.2.0",
+    "repl.history": "",
+    "semver": "^6.3.0",
+    "should": "~4.6.3"
+  },
+  "dependencies": {
+    "node_memcached": "1.1.3",
+    "pomelo-protobuf": "^0.4.0",
+    "protobufjs": ">=5.0.3",
+    "xml2js": "0.4.4",
+    "xmlbuilder": "^13.0.2"
+  },
+  "engines": {
+    "node": ">= 14.17.4"
+  }
+}
