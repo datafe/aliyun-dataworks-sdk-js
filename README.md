@@ -1,10 +1,16 @@
 ## 安装
 
-### Node.js 安装
+### Development
 
 ```sh
-npm install aliyun-dataworks-sdk-js
+npm install
+bower install
+npm install -g browserify
+# build
+browserify -r dataworks-2020-05-18.json browser.js > dist/aliyun-dataworks-sdk.js
 ```
+
+see samples/browser/searchMetaTables.html and test request result
 
 ### 浏览器端安装
 
@@ -37,8 +43,6 @@ dataworks?.searchMetaTables?.({
 });
 ```
 
-
-
 ### Module Import
 
 ``` javascript
@@ -61,5 +65,3 @@ dataworks?.searchMetaTables?.({
   console?.log?.(err, res);
 });
 ```
-
-
