@@ -23,6 +23,7 @@ import dist/aliyun-dataworks-sdk.js into html
 ``` javascript
 let ALY = window.ALY;
 
+if(!ALY?.DATAWORKS) return;
 let dataworks = new ALY.DATAWORKS({
   // see https://ram.console.aliyun.com/manage/ak
   accessKeyId: "Your Access Key",
@@ -48,6 +49,7 @@ dataworks?.searchMetaTables?.({
 ``` javascript
 import ALY from 'aliyun-dataworks-sdk-js';
 
+if(!ALY?.DATAWORKS) return;
 let dataworks = new ALY.DATAWORKS({
   // see https://ram.console.aliyun.com/manage/ak
   accessKeyId: "Your Access Key",
