@@ -1,7 +1,7 @@
 {
   "name": "aliyun-dataworks-sdk-js",
   "description": "Aliyun DataWorks SDK for JavaScript (No Need Backend to Run SDK)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Samuel Hsin <caramels@gmail.com> (https://github.com/datafe)",
   "homepage": "https://github.com/datafe/aliyun-dataworks-sdk-js.git",
   "license": "Apache-2.0",
