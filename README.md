@@ -4,6 +4,7 @@
 
 ```sh
 npm install
+npm install bower -g
 bower install
 npm install -g browserify
 npm run build
