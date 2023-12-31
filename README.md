@@ -76,7 +76,7 @@ dataworks?.searchMetaTables?.({
 
 ```javascript
 
-if (!globalThis.ALY) return;
+if (!globalThis?.ALY?.DATAWORKS) return;
 let dataworks = new globalThis.ALY.DATAWORKS({
   // see https://ram.console.aliyun.com/manage/ak
   accessKeyId: "Your Access Key",
