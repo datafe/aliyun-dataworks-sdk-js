@@ -66,7 +66,7 @@ dataworks?.searchMetaTables?.({
 });
 ```
 
-#### Vite
+#### Module / Vite
 
 将aliyun-dataworks-sdk.min.js放至publicDir，然后在html透过script标签载入dist/aliyun-dataworks-sdk.min.js代码引用
 
