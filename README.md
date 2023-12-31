@@ -21,10 +21,9 @@ see samples/browser/searchMetaTables.html and test request result
 import dist/aliyun-dataworks-sdk.js into html
 
 ``` javascript
-let ALY = window.ALY;
 
-if(!ALY?.DATAWORKS) return;
-let dataworks = new ALY.DATAWORKS({
+if(!window?.ALY?.DATAWORKS) return;
+let dataworks = new window.ALY.DATAWORKS({
   // see https://ram.console.aliyun.com/manage/ak
   accessKeyId: "Your Access Key",
   secretAccessKey: "Your Access Secret",
