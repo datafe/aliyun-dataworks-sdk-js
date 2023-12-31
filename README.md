@@ -45,6 +45,8 @@ dataworks?.searchMetaTables?.({
 
 ### Module Import
 
+此import方法在vite脚手架上会失败，建议直接透过<script>标签载入dist/aliyun-dataworks-sdk.min.js代码引用
+
 ``` javascript
 import ALY from 'aliyun-dataworks-sdk-js';
 
