@@ -6,8 +6,7 @@
 npm install
 bower install
 npm install -g browserify
-# build
-browserify -r dataworks-2020-05-18.json browser.js > dist/aliyun-dataworks-sdk.js
+npm run build
 ```
 
 see samples/browser/searchMetaTables.html and test request result
