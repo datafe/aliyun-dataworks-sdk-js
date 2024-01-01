@@ -45,6 +45,8 @@ dataworks?.searchMetaTables?.({
 
 #### Common JS
 
+NPM [Link](https://www.npmjs.com/package/aliyun-dataworks-sdk-js)
+
 ``` javascript
 import ALY from 'aliyun-dataworks-sdk-js';
 
